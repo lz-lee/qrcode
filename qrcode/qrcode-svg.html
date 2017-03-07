@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二维码</title>
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<g id="qrcode">
+	</svg>
+</body>
+<script src="qrcode.js"></script>
+<script>
+	
+	var qrcode = new QRCode(document.getElementById('qrcode'), {
+
+		width: 200,
+		height: 200,
+		useSVG: true
+	});
+
+	qrcode.makeCode('hello world 你好世界');
+</script>
+</html>
